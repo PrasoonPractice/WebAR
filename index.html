@@ -43,18 +43,12 @@
       <button class="say-hi-button">SAY HI!</button>
     </div>
     <a-scene embedded arjs>
-      <a-marker
-        preset="hiro"
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="markerA"
+      <a-marker preset="hiro"
       >
         <a-entity
-          id="dog-model"
-          gltf-model="#dog"
+          gltf-model="./shiba/scene.gltf"
           position="0 0 0"
-          scale="0.05 0.05 0.05"
+          scale="0.5 0.5 0.5"
         >
         </a-entity>
       </a-marker>
