@@ -28,11 +28,18 @@
             console.log(distance);
         }, 100);
     });
-   <script>
-        function myalert() {
-        alert(distance);
-        }
-   </script>      
+     <script>
+    window.onload = function () {
+      document
+        .querySelector(".myalert")
+        .addEventListener("click", function () {
+          // here you can change also a-scene or a-entity properties, like
+          // changing your 3D model source, size, position and so on
+          // or you can just open links, trigger actions...
+          alert(console.log(distance));
+        });
+    };
+  </script>            
     marker.addEventListener('markerLost', () => {
       clearInterval(check);
     })
