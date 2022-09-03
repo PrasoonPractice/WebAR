@@ -7,7 +7,7 @@
   </head>
   <body>
     <body>
-    <a-scene mindar-image="imageTargetSrc: ./targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: ./targets.mind; filterMinCF:0.01; filterBeta: 100; warmupTolerance: 3; missTolerance: 2" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
         <img id="card" src="./dog-g6b257193f_1280.png" />
         <a-asset-item id="avatarModel" src="./shiba/scene.gltf"></a-asset-item>
